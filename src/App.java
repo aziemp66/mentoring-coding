@@ -3,15 +3,15 @@ public class App {
         //creating star patterns with looping
 
         //00. Pyramid with Number
-        System.out.println("\nPyramid with number");
-        for(int i=1; i<=5; i++){
-            for(int j=5; j>=i; j--){
-                System.out.print(" ");
-            }
-            for(int k=1; k<=i; k++){
-                System.out.print(k+" ");
-            }
-            System.out.println();
+        // System.out.println("\nPyramid with number");
+        // for(int i=1; i<=5; i++){
+        //     for(int j=5; j>=i; j--){
+        //         System.out.print(" ");
+        //     }
+        //     for(int k=1; k<=i; k++){
+        //         System.out.print(k+" ");
+        //     }
+        //     System.out.println();
         
 
         // for (int i = 0; i < 5; i++) {
@@ -21,14 +21,19 @@ public class App {
         //     System.out.println();
         // }
 
-        // //1. right angle triangle
-        // System.out.println("Right angle triangle");
-        // for(int i=1; i<=5; i++){
-        //     for(int j=1; j<=i; j++){
-        //         System.out.print("*");
-        //     }
-        //     System.out.println();
-        // }
+        //1. right angle triangle
+        System.out.println("Right angle triangle");
+        for(int i=1; i<=5; i++){
+            int counter = 0;
+            for(int j=1; j<=5; j++){
+                if (j >= i){ 
+                    counter++;
+                    System.out.print(counter);
+                }
+                else System.out.print(" ");
+            }
+            System.out.println();
+        }
 
         // //2. inverted right angle triangle
         // System.out.println("\nInverted right angle triangle");
@@ -320,4 +325,4 @@ public class App {
         // }
         }
     }
-}
+
