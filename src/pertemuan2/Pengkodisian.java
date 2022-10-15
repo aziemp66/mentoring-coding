@@ -29,6 +29,7 @@ public class Pengkodisian {
 				setorTunai(balance);
 				break;
 			default:
+				System.err.println("Input Anda Salah");
 				break;
 		}
 	}
