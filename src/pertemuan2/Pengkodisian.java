@@ -17,6 +17,7 @@ public class Pengkodisian {
 		System.out.println("2. Tarik Tunai");
 		System.out.println("3. Setor Tunai");
 		int menu = input.nextInt();
+		input.close();
 
 		switch (menu) {
 			case 1:
@@ -47,6 +48,7 @@ public class Pengkodisian {
 			System.out.println("Sisa Saldo anda adalah : " + (saldo - tarikan));
 
 		}
+		input.close();
 	}
 
 	public static void setorTunai(double saldo) {
@@ -63,6 +65,7 @@ public class Pengkodisian {
 			System.out.println("Penyetoran Berhasil");
 			System.out.println("Saldo anda adalah :" + (saldo + saldoDisetor));
 		}
+		input.close();
 	}
 
 	public static void cekSaldo(double saldo) {
